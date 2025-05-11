@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { Header1 } from "@/components/ui/header.tsx"
 import { HeroSection } from "@/components/blocks/hero-section-9.tsx"
 
