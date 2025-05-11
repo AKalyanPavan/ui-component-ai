@@ -8,7 +8,7 @@ import Link from 'next/link'
 import kneqtLogo from '../../images/kneqt-logo.png';
 import kneqtLogoBlack from '../../images/kneqt-logo-black.png';
 
-export default function HeaderType5({backgroundColor = "#5023b9", fontColor = "white", buttonColor = "#141414", activePage}) {
+export default function HeaderType5({backgroundColor = "", fontColor = "white", buttonColor = "#141414", activePage}) {
 
 	const [hover, setHover] = useState(false);
 
@@ -16,7 +16,7 @@ export default function HeaderType5({backgroundColor = "#5023b9", fontColor = "w
 	const handleMouseLeave = () => setHover(false);
 
 	return(
-		<div className={`bg-[#5023b9]`}>
+		<div className={`bg-[#5023b9] ${backgroundColor}`}>
 			<div className={`lg:px-[90px] sm:px-[50px] px-[20px] max-w-[1440px] mx-auto text-[14px] font-medium flex items-center justify-between py-[24px] text-white`}>
 				<div className="flex items-center lg:gap-[48px] font-['Red_Hat_Display']">
 					<Link href="/">
