@@ -35,12 +35,12 @@ export default function HeaderType7({page = "Homepage"}) {
 	return(
 		<div id="header" className="sticky top-[0px] bg-[#d7e9f7] z-[1]">
 			<div className="max-w-[1400px] mx-auto sm:px-[50px] px-[20px] py-[20px] flex items-center justify-between font-['Lexend']">
-				<a href="/">
+				<Link href="/">
 					<Image className="sm:w-[200px] w-[150px]" src={logo} alt="wert logo" />
-				</a>
+				</Link>
 				<div className="flex items-center text-[#082d60] font-medium text-[18px]">
 					{page == 'Homepage' && <div className="cursor-pointer mr-[20px] sm:block hidden" onClick={() => scrollPage("pricing")}>Pricing</div>}
-					<a className="" href="tel:+916381637626">
+					<Link className="" href="tel:+916381637626">
 						<div className="w-fit border-[solid] border-[1.5px] border-[#082d60] sm:px-[20px] px-[10px] py-[5px] rounded-[10px] items-center flex cursor-pointer">
 							<div className="flex items-center border-[solid] pr-[5px] py-[5px]">
 								<svg width="20" height="20" viewBox="0 0 23 23" fill="#082d60" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +50,7 @@ export default function HeaderType7({page = "Homepage"}) {
 							<span className="sm:block hidden">+91 638-163-7626</span>
 							<span className="max-sm:block hidden">Call Us</span>
 						</div>
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>

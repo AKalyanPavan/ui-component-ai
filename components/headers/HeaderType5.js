@@ -3,6 +3,7 @@
 import { useState } from 'react';
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import kneqtLogo from '../../images/kneqt-logo.png';
 import kneqtLogoBlack from '../../images/kneqt-logo-black.png';
@@ -18,19 +19,19 @@ export default function HeaderType5({backgroundColor = "#5023b9", fontColor = "w
 		<div className={`bg-[#5023b9]`}>
 			<div className={`lg:px-[90px] sm:px-[50px] px-[20px] max-w-[1440px] mx-auto text-[14px] font-medium flex items-center justify-between py-[24px] text-white`}>
 				<div className="flex items-center lg:gap-[48px] font-['Red_Hat_Display']">
-					<a href="/">
+					<Link href="/">
 						<Image className="sm:w-[200px] w-[120px]" src={(activePage === 'features' || activePage === 'aboutus') ? kneqtLogoBlack : kneqtLogo} alt="kneqtLogo" />
-					</a>
-					<a href="/features">
+					</Link>
+					<Link href="/features">
 						<div className={`cursor-pointer hidden lg:block ${(activePage === 'features') ? 'underline font-bold underline-offset-[10px] decoration-2' : ''}`}>Features</div>
-					</a>
+					</Link>
 					{/*<div className="cursor-pointer hidden lg:block">Benefits</div>*/}
-					<a href="/pricing">
+					<Link href="/pricing">
 						<div className={`cursor-pointer hidden lg:block ${(activePage === 'pricing') ? 'underline font-bold underline-offset-[10px] decoration-2 decoration-[#5023B9]' : ''}`}>Pricing</div>
-					</a>
-					<a href="/aboutus">
+					</Link>
+					<Link href="/aboutus">
 						<div className={`cursor-pointer hidden lg:block ${(activePage === 'aboutus') ? 'underline font-bold underline-offset-[10px] decoration-2' : ''}`}>About us</div>
-					</a>
+					</Link>
 				</div>
 				<div className="">
 					{/* Button */}

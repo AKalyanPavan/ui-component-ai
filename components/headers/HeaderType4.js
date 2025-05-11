@@ -1,15 +1,16 @@
 import logoMeka from '../../images/logo-meka.png';
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeaderType4() {
 	return(
 		<>
 			<div className="max-w-[1440px] mx-auto lg:px-[80px] sm:px-[40px] px-[20px] pt-[20px] flex items-center font-medium text-[14px] font-['Inter'] justify-between">
 				<div className="flex items-end">
-					<a href="/">
+					<Link href="/">
 						<Image className="w-[114px]" src={logoMeka} alt="Logo Meka" />
-					</a>
+					</Link>
 					<div className="max-[800px]:hidden flex items-center gap-[50px] lg:ml-[100px] ml-[50px]">
 						<div>Work</div>
 						<div className="flex items-center">

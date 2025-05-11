@@ -110,9 +110,9 @@ export default function Home() {
     //   </footer>
     // </div>
     <>
-      {/*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
         <Header1></Header1>
-      </div>*/}
+      </div>
       <HeroSection></HeroSection>
       <HeaderType1></HeaderType1>
       <HeaderType2></HeaderType2>
