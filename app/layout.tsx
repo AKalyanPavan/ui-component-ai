@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} ${lexendZetta.variable} ${redHatDisplay.variable} ${lexendDeca.variable} ${montserrat.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend} ${lexendZetta.variable} ${redHatDisplay.variable} ${lexendDeca.variable} ${montserrat.variable} antialiased`}
       >
         {children}
       </body>
