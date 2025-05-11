@@ -8,7 +8,7 @@ import Link from 'next/link'
 import kneqtLogo from '../../images/kneqt-logo.png';
 import kneqtLogoBlack from '../../images/kneqt-logo-black.png';
 
-export default function HeaderType5({backgroundColor = "", fontColor = "white", buttonColor = "#141414", activePage}) {
+export default function HeaderType5({backgroundColor = "", fontColor = "white", buttonColor = "#141414", activePage=""}) {
 
 	const [hover, setHover] = useState(false);
 
