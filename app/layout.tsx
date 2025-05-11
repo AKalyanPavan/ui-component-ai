@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Lexend, Lexend_Deca, Lexend_Zetta, Red_Hat_Display } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +11,30 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const lexend = Lexend({
+   subsets: ['latin'],
+   weight: ['400', '700'],
+   style: ['normal'], // You can add more styles if needed
+});
+
+const lexendZetta = Lexend_Zetta({
+   subsets: ['latin'],
+   weight: ['400', '700'],
+   style: ['normal'], // You can add more styles if needed
+});
+
+const lexendDeca = Lexend_Deca({
+   subsets: ['latin'],
+   weight: ['400', '700'],
+   style: ['normal'], // You can add more styles if needed
+});
+
+const redHatDisplay = Red_Hat_Display({
+   subsets: ['latin'],
+   weight: ['400', '700'],
+   style: ['normal'], // You can add more styles if needed
 });
 
 export const metadata: Metadata = {
@@ -25,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lexend.variable} ${lexendZetta.variable} ${redHatDisplay.variable} ${lexendDeca.variable} antialiased`}
       >
         {children}
       </body>

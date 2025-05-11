@@ -1,6 +1,14 @@
 // import Image from "next/image";
 import { Header1 } from "@/components/ui/header.tsx"
 import { HeroSection } from "@/components/blocks/hero-section-9.tsx"
+import HeaderType1 from "@/components/headers/HeaderType1.js"
+import HeaderType2 from "@/components/headers/HeaderType2.js"
+import HeaderType3 from "@/components/headers/HeaderType3.js"
+import HeaderType4 from "@/components/headers/HeaderType4.js"
+import HeaderType5 from "@/components/headers/HeaderType5.js"
+import HeaderType6 from "@/components/headers/HeaderType6.js"
+import HeaderType7 from "@/components/headers/HeaderType7.js"
+import HeaderType8 from "@/components/headers/HeaderType8.js"
 
 export default function Home() {
   return (
@@ -102,10 +110,18 @@ export default function Home() {
     //   </footer>
     // </div>
     <>
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Header1></Header1>
-    </div>
-    <HeroSection></HeroSection>
+      {/*<div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+        <Header1></Header1>
+      </div>*/}
+      <HeroSection></HeroSection>
+      <HeaderType1></HeaderType1>
+      <HeaderType2></HeaderType2>
+      <HeaderType3></HeaderType3>
+      <HeaderType4></HeaderType4>
+      <HeaderType5></HeaderType5>
+      <HeaderType6></HeaderType6>
+      <HeaderType7></HeaderType7>
+      <HeaderType8></HeaderType8>
     </>
   );
 }
