@@ -4,7 +4,7 @@ import phone from '../../images/phone.svg';
 import Image from 'next/image';
 import Link from 'next/link'
 
-export default function HeaderType6({activeTab, customStyle}) {
+export default function HeaderType6({activeTab = "home", customStyle = ""}) {
 
 	const underlineClass = 'underline underline-offset-8 decoration-2';
 
